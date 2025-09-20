@@ -1,4 +1,6 @@
 AI-Powered VC Due Diligence Assistant 🤖
+
+
 Project Overview
 The AI-Powered VC Due Diligence Assistant is a cutting-edge tool designed to help venture capital analysts, angel investors, and startup founders quickly and comprehensively analyze a company's pitch deck or deal note.
 
@@ -16,3 +18,48 @@ What-If Scenario Analysis: A powerful tool to model how changes in key metrics (
 Comprehensive Financial and Market Analysis: Conducts a detailed breakdown of the company's financial health, competitive landscape, and overall market position.
 
 PDF and Text Support: Supports analysis of both .pdf and .txt files for maximum flexibility.
+
+### Setup and Installation 🚀
+
+To get started with the application, follow these steps.
+
+#### 1. Clone the Repository
+
+First, clone this repository to your local machine using the following commands:
+
+```bash
+git clone [https://github.com/rakshitha1353/ai-vc-assistant.git](https://github.com/rakshitha1353/ai-vc-assistant.git)
+cd ai-vc-assistant
+
+#### 2. Create and Activate a Virtual Environment
+
+It is highly recommended to use a virtual environment to manage dependencies.
+
+**On Windows:**
+
+```bash
+python -m venv .venv
+.\.venv\Scripts\activate
+
+### 3. Install Dependencies
+
+With your virtual environment activated, install all the required libraries:
+
+```bash
+pip install -r requirements.txt
+
+#### 4. Set Your Google API Key
+
+For the application to function, you need a Google API key for the Gemini model. **Do not hardcode your key in the script.** Instead, create a `.env` file in your project directory and set the key as an environment variable.
+
+* Create a file named `.env` in the root of your project.
+* Add your key to the file in the following format:
+'''bash
+GOOGLE_API_KEY="your_api_key_here"
+
+#### 5. Run the Application
+
+Now you can start the Streamlit application from your terminal:
+
+```bash
+streamlit run app.py
