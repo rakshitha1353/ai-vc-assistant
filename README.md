@@ -19,47 +19,36 @@ Comprehensive Financial and Market Analysis: Conducts a detailed breakdown of th
 
 PDF and Text Support: Supports analysis of both .pdf and .txt files for maximum flexibility.
 
-### Setup and Installation 🚀
 
-To get started with the application, follow these steps.
-
-#### 1. Clone the Repository
+### 1. Clone the Repository
 
 First, clone this repository to your local machine using the following commands:
 
 ```bash
-git clone [https://github.com/rakshitha1353/ai-vc-assistant.git](https://github.com/rakshitha1353/ai-vc-assistant.git)
+git clone https://github.com/rakshitha1353/ai-vc-assistant.git
 cd ai-vc-assistant
 
-#### 2. Create and Activate a Virtual Environment
-
+2. Create and Activate a Virtual Environment
 It is highly recommended to use a virtual environment to manage dependencies.
-
-**On Windows:**
-
-```bash
+'''bash
 python -m venv .venv
 .\.venv\Scripts\activate
 
-### 3. Install Dependencies
-
+3. Install Dependencies
 With your virtual environment activated, install all the required libraries:
-
-```bash
+'''bash
 pip install -r requirements.txt
 
-#### 4. Set Your Google API Key
+4. Set Your Google API Key
+For the application to function, you need a Google API key for the Gemini model. Do not hardcode your key in the script. Instead, create a .env file in your project directory and set the key as an environment variable.
 
-For the application to function, you need a Google API key for the Gemini model. **Do not hardcode your key in the script.** Instead, create a `.env` file in your project directory and set the key as an environment variable.
+Create a file named .env in the root of your project.
 
-* Create a file named `.env` in the root of your project.
-* Add your key to the file in the following format:
+Add your key to the file in the following format:
 '''bash
 GOOGLE_API_KEY="your_api_key_here"
 
-#### 5. Run the Application
-
+5. Run the Application
 Now you can start the Streamlit application from your terminal:
-
-```bash
+'''bash
 streamlit run app.py
